@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD6261E91B03F5E4005C1212 /* Distance.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6261E81B03F5E4005C1212 /* Distance.m */; };
+		DDAC823D1B03F1D900543443 /* Value.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAC823C1B03F1D900543443 /* Value.m */; };
+		DDAC82401B03F2A100543443 /* ConversionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAC823F1B03F2A100543443 /* ConversionTool.m */; };
 		DDC6C71B1B02972D002C5EF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC6C71A1B02972D002C5EF1 /* main.m */; };
 		DDC6C71E1B02972D002C5EF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC6C71D1B02972D002C5EF1 /* AppDelegate.m */; };
 		DDC6C7211B02972D002C5EF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC6C7201B02972D002C5EF1 /* ViewController.m */; };
@@ -14,6 +17,7 @@
 		DDC6C7261B02972D002C5EF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC6C7251B02972D002C5EF1 /* Images.xcassets */; };
 		DDC6C7291B02972D002C5EF1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC6C7271B02972D002C5EF1 /* LaunchScreen.xib */; };
 		DDC6C7351B02972D002C5EF1 /* ConvertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC6C7341B02972D002C5EF1 /* ConvertTests.m */; };
+		DDC6C7401B029945002C5EF1 /* ConvertedValuesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC6C73F1B029945002C5EF1 /* ConvertedValuesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD6261E71B03F5E4005C1212 /* Distance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Distance.h; sourceTree = "<group>"; };
+		DD6261E81B03F5E4005C1212 /* Distance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Distance.m; sourceTree = "<group>"; };
+		DDAC823B1B03F1D900543443 /* Value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Value.h; sourceTree = "<group>"; };
+		DDAC823C1B03F1D900543443 /* Value.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Value.m; sourceTree = "<group>"; };
+		DDAC823E1B03F2A100543443 /* ConversionTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversionTool.h; sourceTree = "<group>"; };
+		DDAC823F1B03F2A100543443 /* ConversionTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversionTool.m; sourceTree = "<group>"; };
 		DDC6C7151B02972D002C5EF1 /* Convert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Convert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC6C7191B02972D002C5EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDC6C71A1B02972D002C5EF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +50,8 @@
 		DDC6C72E1B02972D002C5EF1 /* ConvertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConvertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC6C7331B02972D002C5EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDC6C7341B02972D002C5EF1 /* ConvertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConvertTests.m; sourceTree = "<group>"; };
+		DDC6C73E1B029945002C5EF1 /* ConvertedValuesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertedValuesTableViewController.h; sourceTree = "<group>"; };
+		DDC6C73F1B029945002C5EF1 /* ConvertedValuesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertedValuesTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +101,14 @@
 				DDC6C7251B02972D002C5EF1 /* Images.xcassets */,
 				DDC6C7271B02972D002C5EF1 /* LaunchScreen.xib */,
 				DDC6C7181B02972D002C5EF1 /* Supporting Files */,
+				DDC6C73E1B029945002C5EF1 /* ConvertedValuesTableViewController.h */,
+				DDC6C73F1B029945002C5EF1 /* ConvertedValuesTableViewController.m */,
+				DDAC823B1B03F1D900543443 /* Value.h */,
+				DDAC823C1B03F1D900543443 /* Value.m */,
+				DDAC823E1B03F2A100543443 /* ConversionTool.h */,
+				DDAC823F1B03F2A100543443 /* ConversionTool.m */,
+				DD6261E71B03F5E4005C1212 /* Distance.h */,
+				DD6261E81B03F5E4005C1212 /* Distance.m */,
 			);
 			path = Convert;
 			sourceTree = "<group>";
@@ -219,8 +239,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC6C7401B029945002C5EF1 /* ConvertedValuesTableViewController.m in Sources */,
+				DD6261E91B03F5E4005C1212 /* Distance.m in Sources */,
 				DDC6C7211B02972D002C5EF1 /* ViewController.m in Sources */,
 				DDC6C71E1B02972D002C5EF1 /* AppDelegate.m in Sources */,
+				DDAC82401B03F2A100543443 /* ConversionTool.m in Sources */,
+				DDAC823D1B03F1D900543443 /* Value.m in Sources */,
 				DDC6C71B1B02972D002C5EF1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +440,7 @@
 				DDC6C73A1B02972D002C5EF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDC6C73B1B02972D002C5EF1 /* Build configuration list for PBXNativeTarget "ConvertTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +449,7 @@
 				DDC6C73D1B02972D002C5EF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
