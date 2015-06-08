@@ -10,12 +10,17 @@
 
 @implementation ConversionTool
 
-+(NSDecimalNumber *)convertToBaseUnit:(Value *)value {
-    return ([value.value decimalNumberByMultiplyingBy:value.rateToBaseUnit]);
++(NSDecimalNumber *)convertToBaseUnit:(Unit *)unit value:(NSDecimalNumber *)value {
+    return ([value decimalNumberByMultiplyingBy:unit.rateToBaseUnit]);
 }
 
-+(NSDecimalNumber *)convertFromBaseUnit:(Value *)value {
-    return ([value.value decimalNumberByDividingBy:value.rateToBaseUnit]);
++(NSDecimalNumber *)convertFromBaseUnit:(Unit *)unit value:(NSDecimalNumber *)value {
+    return ([value decimalNumberByDividingBy:unit.rateToBaseUnit]);
+}
+
+
++(NSMutableArray *)getDistanceArray {
+    return [[NSMutableArray alloc] init];
 }
 
 @end

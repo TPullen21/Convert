@@ -7,11 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Value.h"
+#import "Unit.h"
 
 @interface ConversionTool : NSObject
 
-+(NSDecimalNumber *)convertToBaseUnit:(Value *)value; 
-+(NSDecimalNumber *)convertFromBaseUnit:(Value *)value;
++(NSDecimalNumber *)convertToBaseUnit:(Unit *)unit value:(NSDecimalNumber *)value;
++(NSDecimalNumber *)convertFromBaseUnit:(Unit *)unit value:(NSDecimalNumber *)value;
+
++(NSMutableArray *)getDistanceArray;
 
 @end

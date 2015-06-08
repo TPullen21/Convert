@@ -10,6 +10,7 @@
 
 @interface Value : NSObject
 
+
 @property (nonatomic) NSDecimalNumber *value;
 @property (nonatomic) NSDecimalNumber *rateToBaseUnit;
 

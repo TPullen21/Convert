@@ -10,6 +10,8 @@
 		DD6261E91B03F5E4005C1212 /* Distance.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6261E81B03F5E4005C1212 /* Distance.m */; };
 		DDAC823D1B03F1D900543443 /* Value.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAC823C1B03F1D900543443 /* Value.m */; };
 		DDAC82401B03F2A100543443 /* ConversionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAC823F1B03F2A100543443 /* ConversionTool.m */; };
+		DDBD561A1B25F95100183B25 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBD56191B25F95100183B25 /* HomeViewController.m */; };
+		DDBD561D1B25FE5100183B25 /* Unit.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBD561C1B25FE5100183B25 /* Unit.m */; };
 		DDC6C71B1B02972D002C5EF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC6C71A1B02972D002C5EF1 /* main.m */; };
 		DDC6C71E1B02972D002C5EF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC6C71D1B02972D002C5EF1 /* AppDelegate.m */; };
 		DDC6C7211B02972D002C5EF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC6C7201B02972D002C5EF1 /* ViewController.m */; };
@@ -37,6 +39,10 @@
 		DDAC823C1B03F1D900543443 /* Value.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Value.m; sourceTree = "<group>"; };
 		DDAC823E1B03F2A100543443 /* ConversionTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversionTool.h; sourceTree = "<group>"; };
 		DDAC823F1B03F2A100543443 /* ConversionTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversionTool.m; sourceTree = "<group>"; };
+		DDBD56181B25F95100183B25 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		DDBD56191B25F95100183B25 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		DDBD561B1B25FE5100183B25 /* Unit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Unit.h; sourceTree = "<group>"; };
+		DDBD561C1B25FE5100183B25 /* Unit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Unit.m; sourceTree = "<group>"; };
 		DDC6C7151B02972D002C5EF1 /* Convert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Convert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC6C7191B02972D002C5EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDC6C71A1B02972D002C5EF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -98,6 +104,8 @@
 				DDC6C71F1B02972D002C5EF1 /* ViewController.h */,
 				DDC6C7201B02972D002C5EF1 /* ViewController.m */,
 				DDC6C7221B02972D002C5EF1 /* Main.storyboard */,
+				DDBD56181B25F95100183B25 /* HomeViewController.h */,
+				DDBD56191B25F95100183B25 /* HomeViewController.m */,
 				DDC6C7251B02972D002C5EF1 /* Images.xcassets */,
 				DDC6C7271B02972D002C5EF1 /* LaunchScreen.xib */,
 				DDC6C7181B02972D002C5EF1 /* Supporting Files */,
@@ -105,6 +113,8 @@
 				DDC6C73F1B029945002C5EF1 /* ConvertedValuesTableViewController.m */,
 				DDAC823B1B03F1D900543443 /* Value.h */,
 				DDAC823C1B03F1D900543443 /* Value.m */,
+				DDBD561B1B25FE5100183B25 /* Unit.h */,
+				DDBD561C1B25FE5100183B25 /* Unit.m */,
 				DDAC823E1B03F2A100543443 /* ConversionTool.h */,
 				DDAC823F1B03F2A100543443 /* ConversionTool.m */,
 				DD6261E71B03F5E4005C1212 /* Distance.h */,
@@ -239,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDBD561D1B25FE5100183B25 /* Unit.m in Sources */,
 				DDC6C7401B029945002C5EF1 /* ConvertedValuesTableViewController.m in Sources */,
 				DD6261E91B03F5E4005C1212 /* Distance.m in Sources */,
 				DDC6C7211B02972D002C5EF1 /* ViewController.m in Sources */,
@@ -246,6 +257,7 @@
 				DDAC82401B03F2A100543443 /* ConversionTool.m in Sources */,
 				DDAC823D1B03F1D900543443 /* Value.m in Sources */,
 				DDC6C71B1B02972D002C5EF1 /* main.m in Sources */,
+				DDBD561A1B25F95100183B25 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
