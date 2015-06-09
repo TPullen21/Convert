@@ -93,7 +93,7 @@
                     <navigationItem key="navigationItem" id="OSB-jD-S7v"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="presentation" id="nHU-TV-fb4"/>
+                        <segue destination="vXZ-lx-hvc" kind="presentation" identifier="HomeViewControllerToConvertedValuesViewController" id="nHU-TV-fb4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHR-Nm-Uo5" userLabel="First Responder" sceneMemberID="firstResponder"/>

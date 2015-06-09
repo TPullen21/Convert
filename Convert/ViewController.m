@@ -10,15 +10,19 @@
 #import "Distance.h"
 #import "ConversionTool.h"
 #import "Value.h"
+#import "Unit.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic) float valueToConvert;
+@property (nonatomic) NSDecimalNumber *valueToConvert;
 @property (strong, nonatomic) IBOutlet UITextField *valueToConvertTextField;
-- (IBAction)goButtonPressed:(UIButton *)sender;
+
+@property (strong, nonatomic) Unit *unitToUse;
 
 @property (strong, nonatomic) Distance* distance;
 @property (strong, nonatomic) Value* value;
+
+- (IBAction)goButtonPressed:(UIButton *)sender;
 
 @end
 
@@ -30,6 +34,7 @@
 //    
 //    self.convertedValuesTableView = [[UITableView alloc] init];
     
+    self.unitToUse = self.unitsToUse[0];
     self.distance = [[Distance alloc] init];
     self.value = self.distance.inches;
 //
@@ -49,21 +54,23 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return [self.unitsToUse count] - 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ConvertedValuesCell" forIndexPath:indexPath];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%f", indexPath.row * self.valueToConvert];
+    NSDecimalNumber *valueToBaseUnit = [ConversionTool convertToBaseUnit:self.unitToUse value:self.valueToConvert];
+    NSDecimalNumber *convertedValueFromBaseUnit = [ConversionTool convertFromBaseUnit:self.unitsToUse[indexPath.row + 1] value:valueToBaseUnit];
+    
+    cell.textLabel.text = [convertedValueFromBaseUnit stringValue];
     
     return cell;
 }
 
 - (IBAction)goButtonPressed:(UIButton *)sender {
-    self.valueToConvert = [self.valueToConvertTextField.text floatValue];
-    self.valueToConvert = self.valueToConvert;
+    self.valueToConvert = [[NSDecimalNumber alloc] initWithFloat:[self.valueToConvertTextField.text floatValue]];
 //    
 //    NSDecimalNumber* baseValue = [ConversionTool convertToBaseUnit:self.value];
     

@@ -12,5 +12,7 @@
 
 @property (strong, nonatomic) IBOutlet UITableView *convertedValuesTableView;
 
+@property (strong, nonatomic) NSMutableArray *unitsToUse;
+
 @end
 

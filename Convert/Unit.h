@@ -13,4 +13,6 @@
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSDecimalNumber *rateToBaseUnit;
 
+-(instancetype)initWithName:(NSString *)name rateToBaseUnit:(NSDecimalNumber *)rateToBaseUnit;
+
 @end

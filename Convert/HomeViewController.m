@@ -7,6 +7,8 @@
 //
 
 #import "HomeViewController.h"
+#import "ViewController.h"
+#import "ConversionTool.h"
 
 @interface HomeViewController ()
 - (IBAction)distanceButtonPressed:(UIButton *)sender;
@@ -33,10 +35,15 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"HomeViewControllerToConvertedValuesViewController"]) {
+        ViewController *vc = segue.destinationViewController;
+        vc.unitsToUse = (NSMutableArray *)sender;
+    }
 }
 
 
 - (IBAction)distanceButtonPressed:(UIButton *)sender {
+    [self performSegueWithIdentifier:@"HomeViewControllerToConvertedValuesViewController" sender:[ConversionTool getDistanceArray]];
 }
 
 - (IBAction)temperatureButtonPressed:(UIButton *)sender {

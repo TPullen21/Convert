@@ -20,7 +20,17 @@
 
 
 +(NSMutableArray *)getDistanceArray {
-    return [[NSMutableArray alloc] init];
+    
+    NSArray *distance;
+    
+    Unit *metres = [[Unit alloc] initWithName:@"Meters" rateToBaseUnit:[[NSDecimalNumber alloc] initWithInt:1]];
+    Unit *kilometers = [[Unit alloc] initWithName:@"Kilometers" rateToBaseUnit:[[NSDecimalNumber alloc]  initWithDouble:0.0001]];
+    Unit *inches = [[Unit alloc] initWithName:@"Inches" rateToBaseUnit:[[NSDecimalNumber alloc] initWithDouble:39.3700787]];
+    Unit *feet = [[Unit alloc] initWithName:@"Feet" rateToBaseUnit:[[NSDecimalNumber alloc] initWithDouble:39.3700787]];
+    
+    distance = @[metres, kilometers, inches, feet];
+    
+    return [[NSMutableArray alloc] initWithArray:[distance mutableCopy]];
 }
 
 @end
